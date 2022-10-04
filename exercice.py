@@ -10,7 +10,7 @@ def list_to_dict(some_list: list) -> dict:
     for i in range(len(some_list)):
         for element in some_list:
             result[element] = i
-
+    # https://docs.python.org/3.10/library/functions.html?highlight=enumerate#enumerate
     result = {element: j for element in some_list for j in range(len(some_list))}
 
     return result
